@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Çizgim M. M. İ.</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="inşaat mimarlık yapı proje danışmanlık" name="keywords">
+  <meta content="Çizgim Mimarlık sizin için en iyi inşaat mimarlık veya danışmanlık projesini ortaya çıkaracaktır" name="description">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.png')}}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!-- Main Stylesheet File -->
+  <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <div id="map"></div>
+      </div>
+</div>
+
+
+<div class="bg-modal_text">
+      <div class="modal-content_text">
+        <div class="close_text">+</div>
+
+        <style>
+        .mySlides {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Gold N State</h2>
+
+        <div class="w3-content w3-display-container" style="margin-bottom: 2%;">
+          <img class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp.jpg')}}" style="width:100%;height: 50%;">
+          <img class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp2.png')}}" style="width:100%;height: 50%;margin-top: 5%;">
+          <img class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp3.jpg')}}" style="width:100%;height: 60vh;">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div  style="text-align: center;justify-content: center; margin-left: 10%;margin-right: 10%;">
+            <p class="infoText">5000 metrekare arsa üzerine 3 ayrı ulaşım güzergahını gören cepheleri ve 35 metrekare bulvarı ve yeşil alanıyla nitelikli ve prestijli iş mekanları geliştirdik.</p>
+        </div>
+
+      </div>
+</div>
+
+<div class="bg-modal2">
+      <div class="modal-content2">
+        <div class="close2">+</div>
+        <div id="map2"></div>
+      </div>
+</div>
+
+<div class="bg-modal2_text">
+      <div class="modal-content2_text">
+        <div class="close2_text">+</div>
+
+        <style>
+        .mySlides2 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Uğur Okulları ( Yaşamkent / Batıkent )</h2>
+
+        <div class="w3-content2 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides2" src="{{ url_for('static', filename='img/ugurokullarıANA2.jpg')}}" style="width:100%;margin-top: 12%;">
+          <img class="mySlides2" src="{{ url_for('static', filename='img/portfolio/ugurokullaribp1.jpeg')}}" style="width:100%">
+          <img class="mySlides2" src="{{ url_for('static', filename='img/portfolio/ugurokullaribp2.jpg')}}" style="width:100%;margin-top: 5%;">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs2(slideIndex);
+
+        function plusDivs2(n) {
+          showDivs2(slideIndex += n);
+        }
+
+        function showDivs2(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides2");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+<div class="bg-modal3">
+      <div class="modal-content3">
+        <div class="close3">+</div>
+        <div id="map3"></div>
+      </div>
+</div>
+
+<div class="bg-modal3_text">
+      <div class="modal-content3_text">
+        <div class="close3_text">+</div>
+
+        <style>
+        .mySlides3 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">İlaç Fabrikası</h2>
+
+        <div class="w3-content3 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp1.jpg')}}" style="width:100%">
+          <img class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp2.jpg')}}" style="width:100%">
+          <img class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp3.jpg')}}" style="width:100%">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs3(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs3(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs3(slideIndex);
+
+        function plusDivs3(n) {
+          showDivs3(slideIndex += n);
+        }
+
+        function showDivs3(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides3");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+
+<div class="bg-modal4">
+      <div class="modal-content4">
+        <div class="close4">+</div>
+        <div id="map4"></div>
+      </div>
+</div>
+
+<div class="bg-modal4_text">
+      <div class="modal-content4_text">
+        <div class="close4_text">+</div>
+
+        <style>
+        .mySlides4 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Proje Example</h2>
+
+        <div class="w3-content4 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp1.jpg')}}" style="width:100%;">
+          <img class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp2.jpg')}}" style="width:100%;">
+          <img class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp3.jpg')}}" style="width:100%;height: 60vh;">
+          <img class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp4.jpg')}}" style="width:100%";>
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs4(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs4(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs4(slideIndex);
+
+        function plusDivs4(n) {
+          showDivs4(slideIndex += n);
+        }
+
+        function showDivs4(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides4");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+
+<div class="bg-modal5">
+      <div class="modal-content5">
+        <div class="close5">+</div>
+        <div id="map5"></div>
+      </div>
+</div>
+
+<div class="bg-modal5_text">
+      <div class="modal-content5_text">
+        <div class="close5_text">+</div>
+
+        <style>
+        .mySlides5 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Kule</h2>
+
+        <div class="w3-content5 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp1.jpg')}}" style="width:100%;height: 60vh;">
+          <img class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp2.jpg')}}" style="width:100%;height: 60vh;">
+          <img class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp3.jpg')}}" style="width:100%;height: 60vh;">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs5(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs5(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs5(slideIndex);
+
+        function plusDivs5(n) {
+          showDivs5(slideIndex += n);
+        }
+
+        function showDivs5(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides5");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+<div class="bg-modal6">
+      <div class="modal-content6">
+        <div class="close6">+</div>
+        <div id="map6"></div>
+      </div>
+</div>
+
+<div class="bg-modal6_text">
+      <div class="modal-content6_text">
+        <div class="close6_text">+</div>
+
+        <style>
+        .mySlides6 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">İvedik İş Yeri</h2>
+
+        <div class="w3-content6 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp1.jpg')}}" style="width:100%;height: 60vh;">
+          <img class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp2.jpg')}}" style="width:100%;height: 60vh;">
+          <img class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp3.jpg')}}" style="width:100%;height: 60vh;">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs6(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs6(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs6(slideIndex);
+
+        function plusDivs6(n) {
+          showDivs6(slideIndex += n);
+        }
+
+        function showDivs6(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides6");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+<div class="bg-modal7">
+      <div class="modal-content7">
+        <div class="close7">+</div>
+        <div id="map7"></div>
+      </div>
+</div>
+
+<div class="bg-modal7_text">
+      <div class="modal-content7_text">
+        <div class="close7_text">+</div>
+
+        <style>
+        .mySlides7 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">MEKTEBİM KOLEJİ</h2>
+
+        <div class="w3-content7 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp1.jpg')}}" style="width:100%;height: 60vh;">
+          <img class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp2.jpg')}}" style="width:100%;height: 60vh;">
+          <img class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp3.jpg')}}" style="width:100%;height: 60vh;">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs7(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs7(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs7(slideIndex);
+
+        function plusDivs7(n) {
+          showDivs7(slideIndex += n);
+        }
+
+        function showDivs7(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides7");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+<div class="bg-modal8">
+      <div class="modal-content8">
+        <div class="close8">+</div>
+        <div id="map8"></div>
+      </div>
+</div>
+
+<div class="bg-modal8_text">
+      <div class="modal-content8_text">
+        <div class="close8_text">+</div>
+
+        <style>
+        .mySlides8 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">SHELL BENZİN İSTASYONU</h2>
+
+        <div class="w3-content8 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides8" src="{{ url_for('static', filename='img/portfolio/shellbp1.jpg')}}" style="width:100%;height: 60vh;">
+          <img class="mySlides8" src="{{ url_for('static', filename='img/portfolio/shellbp2.jpg')}}" style="width:100%;height: 60vh;">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs8(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs8(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs8(slideIndex);
+
+        function plusDivs8(n) {
+          showDivs8(slideIndex += n);
+        }
+
+        function showDivs8(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides8");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+
+<div class="bg-modal9">
+      <div class="modal-content9">
+        <div class="close9">+</div>
+        <div id="map9"></div>
+      </div>
+</div>
+
+<div class="bg-modal9_text">
+      <div class="modal-content9_text">
+        <div class="close9_text">+</div>
+
+        <style>
+        .mySlides9 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Şahısa Özel Villa</h2>
+
+        <div class="w3-content9 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides9" src="{{ url_for('static', filename='img/portfolio/sahis1bp1.jpg')}}" style="width:100%">
+          <img class="mySlides9" src="{{ url_for('static', filename='img/portfolio/sahis1bp2.jpg')}}" style="width:100%">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs9(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs9(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs9(slideIndex);
+
+        function plusDivs9(n) {
+          showDivs9(slideIndex += n);
+        }
+
+        function showDivs9(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides9");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+
+<div class="bg-modal10">
+      <div class="modal-content10">
+        <div class="close10">+</div>
+        <div id="map10"></div>
+      </div>
+</div>
+
+<div class="bg-modal10_text">
+      <div class="modal-content10_text">
+        <div class="close10_text">+</div>
+
+        <style>
+        .mySlides9 {display:none;}
+        </style>
+        <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Şahısa Özel Villa</h2>
+
+        <div class="w3-content10 w3-display-container" style="margin-bottom: 5%;">
+          <img class="mySlides10" src="{{ url_for('static', filename='img/portfolio/petrolofisibp1.jpg')}}" style="width:100%">
+          <img class="mySlides10" src="{{ url_for('static', filename='img/portfolio/petrolofisibp2.jpg')}}" style="width:100%">
+          <img class="mySlides10" src="{{ url_for('static', filename='img/portfolio/petrolofisibp3.jpg')}}" style="width:100%">
+          <img class="mySlides10" src="{{ url_for('static', filename='img/portfolio/petrolofisibp4.jpg')}}" style="width:100%">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs10(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs10(1)">&#10095;</button>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs10(slideIndex);
+
+        function plusDivs10(n) {
+          showDivs10(slideIndex += n);
+        }
+
+        function showDivs10(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides10");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <div class="infoTextWrapper">
+            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
+        </div>
+
+      </div>
+</div>
+
+<!--           end of popup eleents        -->
+
+  <script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var uluru = {lat: 39.885302, lng: 32.695034};
+    var uluru2 = {lat: 39.980948, lng: 32.694050};
+    var uluru3 = {lat: 39.980948, lng: 32.694050};
+    var uluru7 = {lat: 39.974233, lng: 32.694895};
+    var uluru8 = {lat: 39.956360, lng: 32.704937};
+    // The map, centered at Uluru
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 18, center: uluru});
+    var map2 = new google.maps.Map(
+        document.getElementById('map2'), {zoom: 18, center: uluru2});
+    var map3 = new google.maps.Map(
+        document.getElementById('map3'), {zoom: 18, center: uluru3});
+    var map7 = new google.maps.Map(
+        document.getElementById('map7'), {zoom: 18, center: uluru7});
+    var map8 = new google.maps.Map(
+        document.getElementById('map8'), {zoom: 18, center: uluru8});
+
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+    var marker2 = new google.maps.Marker({position: uluru2, map: map2});
+    var marker3 = new google.maps.Marker({position: uluru3, map: map3});
+    var marker7 = new google.maps.Marker({position: uluru7, map: map7});
+    var marker8 = new google.maps.Marker({position: uluru8, map: map8});
+  }
+      </script>
+      <script defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBiWM5VOa9hckViNnnMTQBikA5Y-o8Suc&callback=initMap">
+  </script>
+
+
+<body>
+<div class="">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <!--<img  class="logoMain" src="img/LOGO_PNG_kopya2.png">-->
+        <h1><a href="#intro" class="scrollto">Çizgim</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="http://localhost:8000/">Anasayfa</a></li>
+          <li class="menu-has-children"><a href="arsiv.html">Arşiv</a>
+            <ul>
+              <li><a href="http://localhost:8000/mimarlik_muhendislik.html">Mimarlik / Mühendislik</a></li>
+              <li><a href="http://localhost:8000/insaat.html">İnşaat</a></li>
+              <li><a href="http://localhost:8000/danismanlik.html">Danışmanlık</a></li>
+              <li><a href="http://localhost:8000/arsiv.html">Tüm Projelerimiz</a></li>
+            </ul>
+          </li>
+          <li><a href="#portfolio">MİMARLIK / MÜHENDİSLİK</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/1.jpg')}}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <!--
+                <h2>Hiçbir şeye ihtiyacımız yok, yalnız bir şeye ihtiyacımız vardır; çalışkan olmak.</h2>
+                <p>Mustafa Kemal Atatürk</p>
+                -->
+                <!--<a href="#featured-services" class="btn-get-started scrollto">Arşivde İncele</a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/2.jpg')}}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <!--
+                <h2>İnsan yaşamının amacı, başkalarına hizmet etmek ve yardımcı olmayı istemektir.</h2>
+                <p>Dr. Albert Schweitzer</p>
+                -->
+                <!--<a href="#featured-services" class="btn-get-started scrollto">Arşivde İncele</a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/3.jpg')}}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <!--
+                <h2>Başarı bir yolculuktur, varış noktası değil. </h2>
+                <p>Ben Sweetland</p>
+                -->
+                <!--<a href="#featured-services" class="btn-get-started scrollto">Arşivde İncele</a>-->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+
+
+
+  <main id="main">
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">MİMARLIK / MÜHENDİSLİK</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <!--<li data-filter="*" class="filter-active">Hepsi</li>-->
+              <li data-filter=".filter-app">Ticari Yapılar</li>
+              <li data-filter=".filter-card">Eğitim Yapıları</li>
+              <li data-filter=".filter-web">Konut Yapıları</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/goldnstatebp.jpg')}}" class="img-fluid" alt="">
+                <a class="link-preview" title="Haritada Göster" id="buttonPop"><i class="ion ion-eye"></i></a>
+                <a class="link-details" title="İncele" id="buttonPop_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Gold N State</a></h4>
+                <p>ÇAYYOLU'NUN MERKEZİNDE YENİ TİCARET</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/ugurokullarıANA2.jpg')}}" class="img-fluid" alt="" style="width: 100%;">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop2"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop2_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Uğur Okulları Yaşamkent / Batıkent </a></h4>
+                <p>EĞİTİME ESTETİK BİR DOKUNUŞ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/ilacfabbp3.jpg')}}"  class="img-fluid" alt="" style="height: 27vh;width: 100%;">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop3"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop3_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>İlaç Fabrikası</a></h4>
+                <p>SEKTÖRE YÖNELİK ÇİZGİLER</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/azeriluksbp3.jpg')}}"  class="img-fluid" alt="" style="height: 27vh;width: 100%;">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop4"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop4_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>ASD MASD </a></h4>
+                <p>İŞ ADAMINA ÖZGÜ VİLLA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/kuleornbp1.jpg')}}" class="img-fluid" alt="">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop5"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop5_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Kule</a></h4>
+                <p>Kule Kule Kule
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp1.jpg')}}" class="img-fluid" alt="">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop6"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop6_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>İVEDİK İŞ YERİ</a></h4>
+                <p>SANAYİYE KENDİ ÇİZGİMİZ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/mektebimbp1.jpg')}}" class="img-fluid" alt="">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop7"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop7_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>MEKTEBİM KOLEJİ</a></h4>
+                <p>ÇAĞDAŞ ÇİZGİMİZ VE ÇAĞDAŞ EĞİTİMLER</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/shellbp1.jpg')}}" class="img-fluid" alt="">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop8"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop8_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>SHELL BENZİN İSTASYONU</a></h4>
+                <p>Benzinse şekliniz</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/sahis1bp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;height: 27vh;">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop9"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop9_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>ŞAHSA ÖZEL VİLLA</a></h4>
+                <p>ÇİZGİNİZ ÇİZGİMİZ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{{ url_for('static', filename='img/portfolio/petrolofisibp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;height: 27vh;">
+                <a  class="link-preview" title="Haritada Göster" id="buttonPop10"><i class="ion ion-eye"></i></a>
+                <a  class="link-details" title="İncele" id="buttonPop10_text"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>P.O. BENZİN İSTASYONU</a></h4>
+                <p>BENZİNDE YENİ DÜZEN</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+
+
+
+
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Çizgim</h3>
+            <p>Çizgim, 1997'den beri mimarlık, mühendislik, danışmanlık vb bir sürü sektörde görev alan ve müşterilerine en yüksek derecede hizmet sunan bir kurum olmuştur</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Kullanışlı Linkler</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Anasayfa</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#portfolio">Projelerimiz</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>İletişime Geçin</h4>
+            <p>
+              Gold N State, Çayyolu <br>
+              06810 Çankaya/Ankara<br>
+              Türkiye <br>
+              <strong>Phone:</strong> +90 312 511 34 34<br>
+              <strong>Email:</strong> cizgim@hotmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/cizgim.mimarlik/?hl=tr" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Takipte Kalın</h4>
+            <p>Çizgim hakkında son gelişmeler projeler vb öğrenmek için mail adresinize bildirim alabilirsiniz.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Çizgim</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+        -->
+        Designed by <a href="https://ahmetbahadireyuboglu.com/">Ahmet Bahadır Eyuboğlu (ahmetbahadireyuboglu@gmail.com)</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/superfish/hoverIntent.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/superfish/superfish.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/touchSwipe/jquery.touchSwipe.min.js')}}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{{ url_for('static', filename='contactform/contactform.js')}}"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+  <script src="{{ url_for('static', filename='js/jquery-3.5.1.js')}}"></script>
+
+  <script src="{{ url_for('static', filename='js/popup2.js')}}"></script>
+
+
+</body>
+</html>

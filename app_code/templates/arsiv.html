@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Çizgim M. M. İ.</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="inşaat mimarlık yapı proje danışmanlık" name="keywords">
+  <meta content="Çizgim Mimarlık sizin için en iyi inşaat mimarlık veya danışmanlık projesini ortaya çıkaracaktır" name="description">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.png')}}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!-- Main Stylesheet File -->
+  <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+
+<body>
+<div class="">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <!--<img  class="logoMain" src="img/LOGO_PNG_kopya2.png">-->
+        <h1><a href="#intro" class="scrollto">Çizgim</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="http://localhost:8000/">Anasayfa</a></li>
+          <li class="menu-has-children"><a href="arsiv.html">Arşiv</a>
+            <ul>
+              <li><a href="http://localhost:8000/mimarlik_muhendislik.html">Mimarlik / Mühendislik</a></li>
+              <li><a href="http://localhost:8000/insaat.html">İnşaat</a></li>
+              <li><a href="http://localhost:8000/danismanlik.html">Danışmanlık</a></li>
+              <li><a href="http://localhost:8000/arsiv.html">Tüm Projelerimiz</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">Sektörlerimiz</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/1.jpg')}}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <!--
+                <h2>Hiçbir şeye ihtiyacımız yok, yalnız bir şeye ihtiyacımız vardır; çalışkan olmak.</h2>
+                <p>Mustafa Kemal Atatürk</p>
+                -->
+                <!--<a href="#featured-services" class="btn-get-started scrollto">Arşivde İncele</a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/2.jpg')}}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <!--
+                <h2>İnsan yaşamının amacı, başkalarına hizmet etmek ve yardımcı olmayı istemektir.</h2>
+                <p>Dr. Albert Schweitzer</p>
+                -->
+                <!--<a href="#featured-services" class="btn-get-started scrollto">Arşivde İncele</a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/3.jpg')}}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <!--
+                <h2>Başarı bir yolculuktur, varış noktası değil. </h2>
+                <p>Ben Sweetland</p>
+                -->
+                <!--<a href="#featured-services" class="btn-get-started scrollto">Arşivde İncele</a>-->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+
+
+
+  <main id="main">
+
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>SEKTÖRLERİMİZ</h3>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ url_for('static', filename='img/about-mission.jpg')}}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-person-stalker"></i></div>
+              </div>
+              <h2 class="title"><a href="mimarlik_muhendislik.html">MİMARLIK / MÜHENDİSLİK</a></h2>
+              <p>
+                Çizgim, mimarlık ve mühendislik kapsamında, yeni bina tasarlama, restore etme, mevcut binaları kullanma ve geliştirme ve benzeri daha yüzlerce inşaat projelerinin başından sonuna kadar görev almıştır.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ url_for('static', filename='img/about-plan.jpg')}}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-home-outline"></i></div>
+              </div>
+              <h2 class="title"><a a href="insaat.html">İNŞAAT</a></h2>
+              <p>
+                Çizgim, en önemli unsuru insan ve doğa olan yapıları,  ekolojik bir denge içerisinde Konut, Eğitim, Ticari, Yol, Baraj gibi bir çok çağdaş ve sağlam yapılarla eğitim, iş ve yaşam imkanı sunmuştur.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ url_for('static', filename='img/about-vision.jpg')}}" alt="" class="img-fluid">
+                <div class="icon">  <i class="ion-compose"></i></div>
+              </div>
+              <h2 class="title"><a a href="danismanlik.html">DANIŞMANLIK</a></h2>
+              <p>
+                Çizgim, uzman kadrosuyla, çerçevesinde biriktirdiği bilgi ve tecrübeyi talep eden birey, kurum ve kuruluşlara, tarafsızlık ilkesine bağlı kalarak ve müşterilerinin çıkarlarını gözterek hizmette sınır tanımamıştır.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Çizgim</h3>
+            <p>Çizgim, 1997'den beri mimarlık, mühendislik, danışmanlık vb bir sürü sektörde görev alan ve müşterilerine en yüksek derecede hizmet sunan bir kurum olmuştur</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Kullanışlı Linkler</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Anasayfa</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#portfolio">Projelerimiz</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>İletişime Geçin</h4>
+            <p>
+              Gold N State, Çayyolu <br>
+              06810 Çankaya/Ankara<br>
+              Türkiye <br>
+              <strong>Phone:</strong> +90 312 511 34 34<br>
+              <strong>Email:</strong> cizgim@hotmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/cizgim.mimarlik/?hl=tr" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Takipte Kalın</h4>
+            <p>Çizgim hakkında son gelişmeler projeler vb öğrenmek için mail adresinize bildirim alabilirsiniz.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Çizgim</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+        -->
+        Designed by <a href="https://ahmetbahadireyuboglu.com/">Ahmet Bahadır Eyuboğlu </a>
+        Contact <a>ahmetbahadireyuboglu@gmail.com </a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/superfish/hoverIntent.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/superfish/superfish.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='lib/touchSwipe/jquery.touchSwipe.min.js')}}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{{ url_for('static', filename='contactform/contactform.js')}}"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+
+</body>
+</html>
