@@ -76,9 +76,9 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
 
@@ -127,9 +127,9 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
 
@@ -179,9 +179,9 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
 
@@ -230,9 +230,9 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
 
@@ -266,7 +266,7 @@
 
 <!--
 <div id='hideMe'>
-  
+
   <div class="background-img">
   <img class="imgBg" src="img/cizgimmimarlık2.png">
   <h1 class="slogan">1997'den beri...</h1>
@@ -292,13 +292,13 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="http://localhost:8000/">Anasayfa</a></li>
+          <li class="menu-active"><a href="http://www.cizgimm.com/">Anasayfa</a></li>
           <li class="menu-has-children"><a href="arsiv.html">Arşiv</a>
             <ul>
-              <li><a href="http://localhost:8000/mimarlik_muhendislik.html">Mimarlik / Mühendislik</a></li>
-              <li><a href="http://localhost:8000/insaat.html">İnşaat</a></li>
-              <li><a href="http://localhost:8000/danismanlik.html">Danışmanlık</a></li>
-              <li><a href="http://localhost:8000/arsiv.html">Tüm Projelerimiz</a></li>
+              <li><a href="http://www.cizgimm.com/mimarlik_muhendislik.html">Mimarlik / Mühendislik</a></li>
+              <li><a href="http://www.cizgimm.com/insaat.html">İnşaat</a></li>
+              <li><a href="http://www.cizgimm.com/danismanlik.html">Danışmanlık</a></li>
+              <li><a href="http://www.cizgimm.com/arsiv.html">Tüm Projelerimiz</a></li>
             </ul>
           </li>
           <li><a href="#portfolio">İnşaat</a></li>
@@ -547,32 +547,38 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+  <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
-  <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/superfish/hoverIntent.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/superfish/superfish.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/touchSwipe/jquery.touchSwipe.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-3.5.1.js')}}"></script>
+  <script async src="{{ url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
+  <script async src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script async src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous"></script>
+  <script async src="{{ url_for('static', filename='lib/superfish/hoverIntent.js')}}"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/superfish/superfish.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.10/js/superfish.min.js" integrity="sha512-gdhtclwUZCkHSSb/Q79++RssWL4eDLKHO15TC7kR/XnvlNyzcvZDRLn4BIuxadMWGIxPuj/IbFBInMpYockVCA==" crossorigin="anonymous"></script>
+  <script async src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+  <!--  <script async src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script async src="{{ url_for('static', filename='lib/counterup/counterup.min.js')}}"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+  <script async src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js')}}"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/touchSwipe/jquery.touchSwipe.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous"></script>
+  <script async src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="{{ url_for('static', filename='contactform/contactform.js')}}"></script>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
 
   <!-- Template Main Javascript File -->
   <script src="{{ url_for('static', filename='js/main.js')}}"></script>
 
-  <script src="{{ url_for('static', filename='js/jquery-3.5.1.js')}}"></script>
-
-  <script src="{{ url_for('static', filename='js/popup3.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/popup.js')}}"></script>
 
 
 </body>

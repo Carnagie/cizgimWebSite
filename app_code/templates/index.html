@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Çizgim M. M. İ.</title>
+  <title>Çizgim Mimarlik Mühendislik İnşaat</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="inşaat mimarlık yapı proje danışmanlık" name="keywords">
+  <meta content="inşaat mimarlık Yapı Proje Danışmanlık" name="keywords">
   <meta content="Çizgim Mimarlık sizin için en iyi inşaat mimarlık veya danışmanlık projesini ortaya çıkaracaktır" name="description">
 
   <!-- Favicons -->
@@ -17,24 +17,9 @@
   <!-- Bootstrap CSS File -->
   <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
-  <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='lib/animate/animate.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
   <!-- Main Stylesheet File -->
   <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
 
-  <!-- =======================================================
-    Theme Name: BizPage
-    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
 <div class="bg-modal">
@@ -54,10 +39,10 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Gold N State</h2>
 
-        <div class="w3-content w3-display-container" style="margin-bottom: 2%;">
-          <img class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp.jpg')}}" style="width:100%;height: 50%;">
-          <img class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp2.png')}}" style="width:100%;height: 50%;margin-top: 5%;">
-          <img class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp3.jpg')}}" style="width:100%;height: 60vh;">
+        <div class="w3-content w3-display-container" style="margin-bottom: 2%;position:relative;">
+          <img loading="lazy" class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp.jpg')}}" style="width:100%;height: 50%;max-height: 60vh;">
+          <img loading="lazy" class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp2.png')}}" style="width:100%;height: 50%;max-height: 60vh;">
+          <img loading="lazy" class="mySlides" src="{{ url_for('static', filename='img/portfolio/goldnstatebp3.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -77,16 +62,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div  style="text-align: center;justify-content: center; margin-left: 10%;margin-right: 10%;">
-            <p class="infoText">5000 metrekare arsa üzerine 3 ayrı ulaşım güzergahını gören cepheleri ve 35 metrekare bulvarı ve yeşil alanıyla nitelikli ve prestijli iş mekanları geliştirdik.</p>
-        </div>
-
       </div>
 </div>
 
@@ -106,10 +86,10 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Uğur Okulları ( Yaşamkent / Batıkent )</h2>
 
-        <div class="w3-content2 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides2" src="{{ url_for('static', filename='img/ugurokullarıANA2.jpg')}}" style="width:100%;margin-top: 12%;">
-          <img class="mySlides2" src="{{ url_for('static', filename='img/portfolio/ugurokullaribp1.jpeg')}}" style="width:100%">
-          <img class="mySlides2" src="{{ url_for('static', filename='img/portfolio/ugurokullaribp2.jpg')}}" style="width:100%;margin-top: 5%;">
+        <div class="w3-content2 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides2" src="{{ url_for('static', filename='img/ugurokullarıANA2.jpg')}}" style="width:100%;max-height: 60vh;">
+          <img loading="lazy" class="mySlides2" src="{{ url_for('static', filename='img/portfolio/ugurokullaribp1.jpeg')}}" style="width:100%;max-height: 60vh;">
+          <img loading="lazy" class="mySlides2" src="{{ url_for('static', filename='img/portfolio/ugurokullaribp2.jpg')}}" style="width:100%;margin-top: 5%;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
@@ -129,15 +109,12 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
 
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -158,10 +135,10 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">İlaç Fabrikası</h2>
 
-        <div class="w3-content3 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp1.jpg')}}" style="width:100%">
-          <img class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp2.jpg')}}" style="width:100%">
-          <img class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp3.jpg')}}" style="width:100%">
+        <div class="w3-content3 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp1.jpg')}}" style="width:100%;max-height: 60vh;">
+          <img loading="lazy" class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp2.jpg')}}" style="width:100%;max-height: 60vh;">
+          <img loading="lazy" class="mySlides3" src="{{ url_for('static', filename='img/portfolio/ilacfabbp3.jpg')}}" style="width:100%;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs3(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs3(1)">&#10095;</button>
@@ -181,15 +158,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -211,11 +184,11 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Proje Example</h2>
 
-        <div class="w3-content4 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp1.jpg')}}" style="width:100%;">
-          <img class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp2.jpg')}}" style="width:100%;">
-          <img class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp3.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp4.jpg')}}" style="width:100%";>
+        <div class="w3-content4 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp1.jpg')}}" style="width:100%;max-height: 60vh;">
+          <img loading="lazy" class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp2.jpg')}}" style="width:100%;max-height: 60vh;">
+          <img loading="lazy" class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp3.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides4" src="{{ url_for('static', filename='img/portfolio/azeriluksbp4.jpg')}}" style="width:100%";>
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs4(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs4(1)">&#10095;</button>
@@ -235,15 +208,12 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
 
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -265,10 +235,10 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Kule</h2>
 
-        <div class="w3-content5 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp1.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp2.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp3.jpg')}}" style="width:100%;height: 60vh;">
+        <div class="w3-content5 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp1.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp2.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides5" src="{{ url_for('static', filename='img/portfolio/kuleornbp3.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs5(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs5(1)">&#10095;</button>
@@ -288,15 +258,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -317,10 +283,10 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">İvedik İş Yeri</h2>
 
-        <div class="w3-content6 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp1.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp2.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp3.jpg')}}" style="width:100%;height: 60vh;">
+        <div class="w3-content6 w3-display-container" style="margin-bottom: 5%; margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp1.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp2.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides6" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp3.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs6(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs6(1)">&#10095;</button>
@@ -340,15 +306,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -369,10 +331,10 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">MEKTEBİM KOLEJİ</h2>
 
-        <div class="w3-content7 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp1.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp2.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp3.jpg')}}" style="width:100%;height: 60vh;">
+        <div class="w3-content7 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp1.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp2.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides7" src="{{ url_for('static', filename='img/portfolio/mektebimbp3.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs7(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs7(1)">&#10095;</button>
@@ -392,15 +354,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -421,10 +379,10 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">ENDOKS</h2>
 
-        <div class="w3-content8 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides8" src="{{ url_for('static', filename='img/portfolio/yasamkentitopinsbp1.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides8" src="{{ url_for('static', filename='img/portfolio/yasamkentitopinsbp2.jpg')}}" style="width:100%;height: 60vh;">
-          <img class="mySlides8" src="{{ url_for('static', filename='img/portfolio/yasamkentitopinsbp3.jpg')}}" style="width:100%;height: 60vh;">
+        <div class="w3-content8 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides8" src="{{ url_for('static', filename='img/portfolio/yasamkentitopinsbp1.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides8" src="{{ url_for('static', filename='img/portfolio/yasamkentitopinsbp2.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides8" src="{{ url_for('static', filename='img/portfolio/yasamkentitopinsbp3.jpg')}}" style="width:100%;height: 60vh;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs8(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs8(1)">&#10095;</button>
@@ -444,15 +402,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -473,9 +427,9 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Şahısa Özel Villa</h2>
 
-        <div class="w3-content9 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides9" src="{{ url_for('static', filename='img/portfolio/sahis2bp1.jpg')}}" style="width:100%; height: 60vh;">
-          <img class="mySlides9" src="{{ url_for('static', filename='img/portfolio/sahis2bp2.jpg')}}" style="width:100%; height: 60vh;">
+        <div class="w3-content9 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides9" src="{{ url_for('static', filename='img/portfolio/sahis2bp1.jpg')}}" style="width:100%; height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides9" src="{{ url_for('static', filename='img/portfolio/sahis2bp2.jpg')}}" style="width:100%; height: 60vh;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs9(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs9(1)">&#10095;</button>
@@ -495,15 +449,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -524,10 +474,10 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">Yaşamkent Özel Villa</h2>
 
-        <div class="w3-content10 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides10" src="{{ url_for('static', filename='img/portfolio/yasamkentinsbp1.jpg')}}" style="width:100%; height: 60vh;">
-          <img class="mySlides10" src="{{ url_for('static', filename='img/portfolio/yasamkentinsbp2.jpg')}}" style="width:100%; height: 60vh;">
-          <img class="mySlides10" src="{{ url_for('static', filename='img/portfolio/yasamkentinsbp3.jpg')}}" style="width:100%; height: 60vh;">
+        <div class="w3-content10 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy"  class="mySlides10" src="{{ url_for('static', filename='img/portfolio/yasamkentinsbp1.jpg')}}" style="width:100%; height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides10" src="{{ url_for('static', filename='img/portfolio/yasamkentinsbp2.jpg')}}" style="width:100%; height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides10" src="{{ url_for('static', filename='img/portfolio/yasamkentinsbp3.jpg')}}" style="width:100%; height: 60vh;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs10(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs10(1)">&#10095;</button>
@@ -547,15 +497,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -576,9 +522,9 @@
         </style>
         <h2 style="margin-top: 2%;" class="w3-center" id="headlineText">PARK AŞİYAN</h2>
 
-        <div class="w3-content11 w3-display-container" style="margin-bottom: 5%;">
-          <img class="mySlides11" src="{{ url_for('static', filename='img/portfolio/yildizlarbp1.jpg')}}" style="width:100%; height: 60vh;">
-          <img class="mySlides11" src="{{ url_for('static', filename='img/portfolio/yildizlarbp2.jpg')}}" style="width:100%; height: 60vh;">
+        <div class="w3-content11 w3-display-container" style="margin-bottom: 5%;margin-left:5%;margin-right:5%;">
+          <img loading="lazy" class="mySlides11" src="{{ url_for('static', filename='img/portfolio/yildizlarbp1.jpg')}}" style="width:100%; height: 60vh;max-height: 60vh;">
+          <img loading="lazy" class="mySlides11" src="{{ url_for('static', filename='img/portfolio/yildizlarbp2.jpg')}}" style="width:100%; height: 60vh;max-height: 60vh;">
 
           <button class="w3-button w3-black w3-display-left" onclick="plusDivs11(-1)">&#10094;</button>
           <button class="w3-button w3-black w3-display-right" onclick="plusDivs11(1)">&#10095;</button>
@@ -598,15 +544,11 @@
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex-1].style.display = "block";
         }
         </script>
-
-        <div class="infoTextWrapper">
-            <p class="infoText">13500 metrekare kapalı alan, 11000 metrekare arsa üzerine yapılmış olan projemiz 100'e yakın derslik ve 1500 üzerinde öğrenci kapasitesine sahiptir ve okul öncesi, ilköğretim, ortaöğretim ve lise eğitiminden oluşmaktadır.</p>
-        </div>
 
       </div>
 </div>
@@ -650,10 +592,9 @@
 
 
 <div id='hideMe'>
-  
+
   <div class="background-img">
-  <img class="imgBg" src="{{ url_for('static', filename='img/cizgimmimarlık2.png')}}">
-  <h2 class="slogan">1997'den beri...</h2>
+    <!--<video id="vid" controls autoplay muted>  <source src="{{ url_for('static', filename='cizgim_video.mp4')}}" type="video/mp4"> </video>-->
   </div>
 </div>
 
@@ -669,7 +610,7 @@
 
       <div id="logo" class="pull-left">
         <!--<img  class="logoMain" src="img/LOGO_PNG_kopya2.png">-->
-        <h1><a href="#intro" class="scrollto">Çizgim</a></h1>
+        <h1><a id="logopic" href="#intro" class="scrollto"><img style="max-height: 5vh;max-width:10vw" src="{{ url_for('static', filename='cizgim_name2.png')}}" alt=""></a><a id="logotext" href="#intro" class="scrollto">Çizgim</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -683,10 +624,10 @@
           <!--<li><a href="#team">Team</a></li>-->
           <li class="menu-has-children"><a href="arsiv.html">Arşiv</a>
             <ul>
-              <li><a href="http://localhost:8000/mimarlik_muhendislik.html">Mimarlik / Mühendislik</a></li>
-              <li><a href="http://localhost:8000/insaat.html">İnşaat</a></li>
-              <li><a href="http://localhost:8000/danismanlik.html">Danışmanlık</a></li>
-              <li><a href="http://localhost:8000/arsiv.html">Tüm Projelerimiz</a></li>
+              <li><a href="http://www.cizgimm.com/mimarlik_muhendislik.html">Mimarlik / Mühendislik</a></li>
+              <li><a href="http://www.cizgimm.com/insaat.html">İnşaat</a></li>
+              <li><a href="http://www.cizgimm.com/danismanlik.html">Danışmanlık</a></li>
+              <li><a href="http://www.cizgimm.com/arsiv.html">Tüm Projelerimiz</a></li>
             </ul>
           </li>
           <li><a href="#contact">İletişim</a></li>
@@ -707,7 +648,7 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/1.jpg')}}" alt=""></div>
+            <div class="carousel-background"><img src="https://erymunch.sirv.com/Images/1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <!--
@@ -720,7 +661,7 @@
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/2.jpg')}}" alt=""></div>
+            <div class="carousel-background"><img loading="lazy" id="mobilePic" src="https://erymunch.sirv.com/Images/2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <!--
@@ -733,7 +674,7 @@
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="{{ url_for('static', filename='img/intro-carousel/3.jpg')}}" alt=""></div>
+            <div class="carousel-background"><img loading="lazy" src="https://erymunch.sirv.com/Images/3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <!--
@@ -863,9 +804,7 @@
 
         <header class="section-header wow fadeInUp">
           <h3>Hakkımızda</h3>
-          <p>Çizgim Yönetim Kurulu Başkanı Abdullah Çelik 1991 yılında GAZİ ÜNİVERSİTESİ İnşaat Mühendisliği bölümünden mezun oldu. 2 yıl özel sektör, ve 15 yıl KARA YOLLARI GENEL MÜDÜRLÜĞÜ'NDE hizmet verdi, bu sırada 1997 yılında kurulan ÇİZGİM'e Abdullah Çelik 2006 yılında ortak olmuş ve daha sonra kendi bünyesine almıştır. Bugüne kadar Toplu Konut, Villa, Okul, Cami, Alışveriş Merkezi, Hastahane, Akaryakıt İstasyonu, Dinlenme ve Eğlence Tesisi, Santral Binası, Fabrika gibi birçok proje'nin
-          altına imzasını atmıştır.Çizgim, danışman, mimar ve mühendisleriyle koordineli çalışarak her konuda en üst seviyede olmaya önem göstermiştir. Müşteri ile birlikte çalışarak tasarımlara fonksiyonlara ve ekonomik şartlara en uygun, estetik ve müşterinin kendi ÇİZGİSİNE hitap edecek projeleri ortaya koymak firmanın başka bir önceliğidir. Projelerin zamanında ve en iyi şekilde tamamlanması ÇİZGİM'in amaçlarındandır.ÇİZGİM'in inancı ve vazifesi, insana doğaya saygılı, imkanların bilincinde, her noktası ile bir ahenk içinde yaşayan projeler yapmaktır. Bu prensiple ilerlerken sınırsız hayal gücünün tasarladıklarını gerçekleştirmek, en büyük hedifidir...
-        </p>
+          <p>1997 yılında inşaat ve proje sektöründe büyük ölçekli projelerin geliştirilmesi ve teknolojideki son yenilikleri takip ederek inşaat ve proje sektörümüzün çağdaş düzeye ulaşmasına katkı sunmak amacıyla ankarada kurulmuş olan Çizgim mimarlık mühendislik inşaat kuruluşundan beri süregelen profesyonelliğiyle istikrarlı bir büyüme göstererek inşaat dünyasında saygın bir yer edinmiştir.</p>
         </header>
 
         <div class="row">
@@ -895,63 +834,11 @@
             <h4 class="title"><a>Verimli</a></h4>
             <p class="description">Tasarruflu müşteri bütçesine sağdık ve ekonomiyi gözeten yapılar ile herkesi memnun eder.</p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a>Sizin Çizginiz</a></h4>
-            <p class="description">Müşterileri ile beraber çalışarak, her çizgide kendinden bir parça bulmasını sağlar.</p>
-          </div>
 
         </div>
 
       </div>
     </section><!-- #services -->
-
-
-    <!--==========================
-      Skills Section
-    ============================-->
-
-    <!--
-    <section id="skills">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Canlı Projeler</h3>
-          <p>Süreç esansında ve devam eden projelerimizin ilerleme yüzdesini takip edebilirsiniz...</p>
-        </header>
-
-        <div class="skills-content">
-
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Gold N State <i class="val">20%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Ay Doruk Villaları <i class="val">90%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Yaşam Kent <i class="val">75%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Oran <i class="val">55%</i></span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    -->
 
     <!--==========================
       Portfolio Section
@@ -979,7 +866,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/goldnstatebp.jpg')}}" class="img-fluid" alt="" style="width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/goldnstatebp.jpg')}}" class="img-fluid" alt="" style="width: 100%;height:105%;">
                 <a class="link-preview" title="Haritada Göster" id="buttonPop"><i class="ion ion-eye"></i></a>
                 <a class="link-details" title="İncele" id="buttonPop_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -994,7 +881,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/ugurokullarıANA2.jpg')}}" class="img-fluid" alt="" style="width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/ugurokullarıANA2.jpg')}}" class="img-fluid" alt="" style="width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop2"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop2_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1009,7 +896,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/ilacfabbp3.jpg')}}"  class="img-fluid" alt="" style="height: 26vh;width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/ilacfabbp3.jpg')}}"  class="img-fluid" alt="" style="width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop3"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop3_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1024,7 +911,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/azeriluksbp3.jpg')}}"  class="img-fluid" alt="" style="height: 27vh;width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/azeriluksbp3.jpg')}}"  class="img-fluid" alt="" style="height:105%;width: 100%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop4"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop4_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1039,7 +926,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/kuleornbp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/kuleornbp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop5"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop5_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1055,7 +942,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/ivedikisyeribp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop6"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop6_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1070,7 +957,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/mektebimbp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/mektebimbp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop7"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop7_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1085,7 +972,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/yasamkentitopinsbp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/yasamkentitopinsbp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop8"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop8_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1100,7 +987,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/sahis2bp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/sahis2bp1.jpg')}}" class="img-fluid" alt="" style="width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop9"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop9_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1116,7 +1003,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/yasamkentinsbp1.jpg')}}" class="img-fluid" alt="" style="height: 27vh; width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/yasamkentinsbp1.jpg')}}" class="img-fluid" alt="" style="height: 27vh; width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop10"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop10_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1131,7 +1018,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="{{ url_for('static', filename='img/portfolio/yildizlarbp2.jpg')}}" class="img-fluid" alt="" style="height: 27vh; width: 100%;">
+                <img loading="lazy" src="{{ url_for('static', filename='img/portfolio/yildizlarbp2.jpg')}}" class="img-fluid" alt="" style="height: 27vh; width: 100%;height:105%;">
                 <a  class="link-preview" title="Haritada Göster" id="buttonPop11"><i class="ion ion-eye"></i></a>
                 <a  class="link-details" title="İncele" id="buttonPop11_text"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -1159,18 +1046,17 @@
 
         <header class="section-header">
           <h3>GEÇMİŞİMİZ</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </header>
 
         <div class="row counters">
 
   				<div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">23</span>
+            <span data-toggle="counter-up">24</span>
             <p>Yıllık Deneyim</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">150</span>
+            <span data-toggle="counter-up">200</span>
             <p>Bitmiş Proje</p>
   				</div>
 
@@ -1194,199 +1080,7 @@
     </section><!-- #facts -->
 
 
-    <!--==========================
-      Clients Section
-    ============================-->
-    <section id="clients" class="wow fadeInUp">
-      <div class="container">
 
-        <header class="section-header">
-          <h3>REFERENASLARIMIZ</h3>
-        </header>
-
-        <div class="owl-carousel clients-carousel">
-          <img src="{{ url_for('static', filename='img/clients/client-1.png')}}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-2.png')}}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-3.png')}}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-4.png')}}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-5.png')}}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-6.png')}}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-7.png')}}" alt="">
-          <img src="{{ url_for('static', filename='img/clients/client-8.png')}}" alt="">
-        </div>
-
-      </div>
-    </section><!-- #clients -->
-
-    <!--==========================
-      Clients Section
-    ============================-->
-
-    <!--
-    <section id="testimonials" class="section-bg wow fadeInUp">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Testimonials</h3>
-        </header>
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    -->
-    <!-- #testimonials -->
-
-    <!--==========================
-      Team Section
-    ============================-->
-    <!--
-    <section id="team">
-      <div class="container">
-        <div class="section-header wow fadeInUp">
-          <h3>Team</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp">
-            <div class="member">
-              <img src="img/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="member">
-              <img src="img/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="member">
-              <img src="img/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="img/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    
-    </section>
-    -->
-    <!-- #team -->
 
     <!--==========================
       Call To Action Section
@@ -1532,12 +1226,6 @@
         &copy; Copyright <strong>Çizgim</strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
-        -->
         Designed by <a href="https://ahmetbahadireyuboglu.com/">Ahmet Bahadır Eyuboğlu (ahmetbahadireyuboglu@gmail.com)</a>
       </div>
     </div>
@@ -1545,30 +1233,50 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+  <!--<div id="preloader"></div>-->
+
+
+
+  <!-- Libraries CSS Files -->
+  <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" defer>
+  <link href="{{ url_for('static', filename='lib/animate/animate.min.css')}}" rel="stylesheet" defer>
+  <link href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet" defer>
+  <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet" defer>
+  <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet" defer>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
 
   <!-- JavaScript Libraries -->
-  <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/superfish/hoverIntent.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/superfish/superfish.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='lib/touchSwipe/jquery.touchSwipe.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-3.5.1.js')}}"></script>
+  <script async src="{{ url_for('static', filename='lib/jquery/jquery.min.js')}}"></script>
+  <script async src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js')}}"></script>
+  <script async src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous"></script>
+  <script async src="{{ url_for('static', filename='lib/superfish/hoverIntent.js')}}"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/superfish/superfish.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.10/js/superfish.min.js" integrity="sha512-gdhtclwUZCkHSSb/Q79++RssWL4eDLKHO15TC7kR/XnvlNyzcvZDRLn4BIuxadMWGIxPuj/IbFBInMpYockVCA==" crossorigin="anonymous"></script>
+  <script async src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+  <!--  <script async src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script async src="{{ url_for('static', filename='lib/counterup/counterup.min.js')}}"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+  <script async src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js')}}"></script>
+  <!--<script async src="{{ url_for('static', filename='lib/touchSwipe/jquery.touchSwipe.min.js')}}"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous"></script>
+  <!--<script async src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>-->
   <!-- Contact Form JavaScript File -->
   <script src="{{ url_for('static', filename='contactform/contactform.js')}}"></script>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
 
   <!-- Template Main Javascript File -->
   <script src="{{ url_for('static', filename='js/main.js')}}"></script>
-
-  <script src="{{ url_for('static', filename='js/jquery-3.5.1.js')}}"></script>
 
   <script src="{{ url_for('static', filename='js/popup.js')}}"></script>
 

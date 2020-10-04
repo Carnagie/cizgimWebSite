@@ -128,11 +128,11 @@
 
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
-  
+
     nav_sections.each(function() {
       var top = $(this).offset().top - main_nav_height,
           bottom = top + $(this).outerHeight();
-  
+
       if (cur_pos >= top && cur_pos <= bottom) {
         main_nav.find('li').removeClass('menu-active menu-item-active');
         main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('menu-active menu-item-active');
@@ -158,19 +158,6 @@
       if (direction == 'right') $(this).carousel('prev');
     },
     allowPageScroll:"vertical"
-  });
-
-  // Skills section
-  $('#skills').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
-      $(this).css("width", $(this).attr("aria-valuenow") + '%');
-    });
-  }, { offset: '80%'} );
-
-  // jQuery counterUp (used in Facts section)
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
   });
 
   // Porfolio isotope and filter

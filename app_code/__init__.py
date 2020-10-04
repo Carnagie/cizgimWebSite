@@ -31,6 +31,11 @@ def index5():
 
     return render_template('mimarlik_muhendislik.html')
 
+@app.route('/google56eaba67fcb83997.html', methods=["GET","POST"])
+def index6():
+
+    return render_template('google56eaba67fcb83997.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True,port=8000)
